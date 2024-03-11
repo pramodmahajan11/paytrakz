@@ -1,12 +1,10 @@
 import "./App.css";
-import CalendarPage from "./components/Calendar";
+import SlotBook from "./components/SlotBook/SlotBook";
 
 function App() {
   return (
     <>
-      <div style={{ height: "50%" }}>
-        <CalendarPage />
-      </div>
+      <SlotBook />
     </>
   );
 }

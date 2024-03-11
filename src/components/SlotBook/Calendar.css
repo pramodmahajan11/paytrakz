@@ -1,0 +1,233 @@
+.calendar {
+  height: auto;
+  width: 500px;
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial, sans-serif;
+  /* margin-top: 10px; */
+}
+/* .calend_head {
+  width: 232px;
+  height: 78px;
+  display: flex;
+  justify-content: center;
+} */
+.calend_head h3 {
+  font-size: 26px;
+  color: #ffffff;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-top: 1px; */
+  text-transform: uppercase;
+  font-size: 25px;
+  color: #000000;
+  font-weight: 700;
+  font-family: "Istok Web", sans-serif;
+  margin-top: 15px;
+  width: 550px;
+}
+
+.weekdays {
+  /* padding-top: 10px; */
+  display: flex;
+  justify-content: space-between;
+  width: 550px; /* size incr del */
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  /* padding: 5px; */
+  background: #2a31c426;
+  color: aliceblue;
+  width: 590px; /* size incr  del*/
+  height: 250px; /* size incr  del*/
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  cursor: pointer;
+  /* margin-top: 2px; */
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  font-size: 20px;
+}
+hr {
+  width: 700px;
+  margin-top: 2px;
+
+  margin-bottom: 10px;
+  padding: 0;
+  border: 1.5px solid white;
+}
+
+.current {
+  position: relative;
+}
+
+.current {
+  color: #ffffff;
+  font-weight: 400;
+  color: #007bff;
+}
+
+/* Calendar.css */
+
+.calendar {
+  width: 410px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+/* .day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+.book-time {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.book-time h3 {
+  margin-bottom: 10px;
+}
+
+.time-slider {
+  width: 100%;
+  margin: 0 auto;
+} */
+
+/* .time-button {
+  display: flex;
+  justify-content: center;
+  padding: 0px 1px;
+  height: 45px;
+  width: 130px;
+  background-color: #007bff;
+  color: #fff;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+} */
+
+.time-button.selected {
+  background-color: #0056b3;
+}
+/* ======================== */
+.slider-container {
+  position: relative;
+  width: 96%;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 70px;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  padding: 0 0px;
+  /* width: 50%; */
+  /* height: 8px; */
+}
+
+.item {
+  flex: 0 0 33.333%;
+  color: brown;
+  text-align: center;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+.slider-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  /* width: 113px; */
+  padding: 0 2px;
+}
+.slider-button {
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  border-radius: 6px;
+  border: 5px;
+  background: #2a31c4;
+  border: 2px solid #2a31c4;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Istok Web", sans-serif;
+  font-weight: 700;
+}
+.slider-button.selected {
+  background: #eb3223;
+
+  color: #ffffff;
+  border: 2px solid #eb3223;
+  cursor: not-allowed;
+}
+h3 {
+  text-align: center;
+}
+.h-calend {
+  margin-top: 20px;
+}
+.timeTitle,
+.calend_head {
+  font-family: Istok Web;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 560px;
+}
+.timeTitle h1 {
+  color: #ffffff;
+  font-size: 26px;
+}
+.time-heading {
+  font-family: Istok Web;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+}
